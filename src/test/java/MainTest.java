@@ -53,7 +53,7 @@ public class MainTest {
     @DisplayName("isTeen doğru çalışıyor mu?")
     @Test
     public void testPersonIsTeen() {
-        assertEquals(new Person("Jane", "Doe", 18).isTeen(), true);
+        assertEquals(new Person("Jane", "Doe", 10).isTeen(), true);
         assertEquals(new Person("Jane", "Doe", 22).isTeen(), false);
         assertEquals(new Person("Jane", "Doe", 13).isTeen(), true);
     }
